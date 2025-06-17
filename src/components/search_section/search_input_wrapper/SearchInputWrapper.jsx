@@ -32,11 +32,11 @@ function SearchInputWrapper({ searchQuery, setSearchQuery, dispatch }) {
       searchQuery === undefined
     ) {
       coord = await getYourCoordinates();
-      if (coord !== null || coord !== undefined) {
+      if (coord !== null && coord !== undefined) {
         const [lat, longi] = coord;
         res = await fetchWeatherDetails(`${lat},${longi}`, 7);
       } else {
-        es = await fetchWeatherDetails(`New Delhi`, 7);
+        res = await fetchWeatherDetails(`New Delhi`, 7);
       }
     } else {
       res = await fetchWeatherDetails(searchQuery, 7);
