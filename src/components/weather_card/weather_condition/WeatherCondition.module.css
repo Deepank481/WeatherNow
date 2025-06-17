@@ -1,0 +1,13 @@
+.weatherCondition {
+  margin-bottom: 30px;
+}
+
+.weatherCondition h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.weatherCondition p {
+  color: var(--text-secondary);
+}

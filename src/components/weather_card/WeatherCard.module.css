@@ -1,0 +1,11 @@
+.currentWeather {
+  margin-bottom: 30px;
+}
+
+.weatherCard {
+  background: var(--surface-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: var(--shadow-large);
+  border: 1px solid var(--border-color);
+}
